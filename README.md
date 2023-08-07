@@ -4,7 +4,7 @@
 
 
 
-Website: [https://www.starstec.id](https://www.starstec.id)
+Website: [starstec.id](https://www.starstec.id)
 
 Starstec is an Android application built using modern Android development technologies such as Hilt for dependency injection, MVVM architecture, Room for local database, Retrofit for network communication, ExoPlayer for multimedia playback, Coroutines for asynchronous programming, TensorFlow Lite for machine learning inference, Glide for image loading, and Material Design 3 components.
 

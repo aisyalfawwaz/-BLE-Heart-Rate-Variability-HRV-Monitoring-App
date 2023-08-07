@@ -10,7 +10,7 @@ Starstec is an Android application built using modern Android development techno
 ## Features
 
 - Central Bluetooth Low Energy (BLE) application connecting to wearable devices with PPG and GSR sensors.
-- Monitoring and interpretation of Heart Rate Variability (HRV) data.
+- Monitoring and interpretation of Heart Rate Variability (HRV) and Skin Conductivy Response (SCR) data.
 - Deep learning-based stress level assessment for e-sports athletes.
 - Supporting e-sports athletes in managing well-being and optimizing performance.
 

@@ -1,5 +1,3 @@
-# Starstec - Stress Level App 
-
 ![Starstec Logo](https://starstec.id/assets/img/header/landapp-logo.png)
 
 

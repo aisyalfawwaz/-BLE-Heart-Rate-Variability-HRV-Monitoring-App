@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Starstec"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.activity.meditation.MusicMeditationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.pss.PerceivedStressScale"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".ui.activity.offlinedetection.BLEConnectActivity" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".ui.activity.splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.flaslightactivity.FlaslightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.offlinedetection.OfflineDetection"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.consultation.ConsultationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.realtimedetection.RealtimeStressDetectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.laststressdetect.StressDetectActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.meditation.MeditationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.login.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ppgactivity.PpgSensorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.edaactivity.EdaSensorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

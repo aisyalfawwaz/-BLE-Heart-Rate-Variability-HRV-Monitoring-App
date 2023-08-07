@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "388629498136",
+    "firebase_url": "https://starstec-2cf73-default-rtdb.firebaseio.com",
+    "project_id": "starstec-2cf73",
+    "storage_bucket": "starstec-2cf73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:388629498136:android:318e8382e22d44e705766d",
+        "android_client_info": {
+          "package_name": "com.example.starstec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "388629498136-mug4mvoa2rh201tnhl8ovth024u6mfbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.starstec",
+            "certificate_hash": "aa9758b8e86b18b09f8a7e1dd4f65360a05dca3e"
+          }
+        },
+        {
+          "client_id": "388629498136-dtgdblcetl4tv842an1975nuqukpg7hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaoMfJskulkd6pB3BComBsd0xhnZv6-cs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "388629498136-dtgdblcetl4tv842an1975nuqukpg7hk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

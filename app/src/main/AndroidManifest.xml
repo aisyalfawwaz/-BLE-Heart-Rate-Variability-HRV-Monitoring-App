@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission
         android:name="android.permission.BLUETOOTH"
         android:maxSdkVersion="30" />
@@ -13,6 +12,7 @@
     <uses-permission
         android:name="android.permission.ACCESS_FINE_LOCATION"
         tools:ignore="CoarseFineLocation" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:name=".MyApplication"
@@ -26,6 +26,12 @@
         android:theme="@style/Theme.Starstec"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.activity.realtimeresult.RealTimeDetectionResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.ble.ScanActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.activity.meditation.MusicMeditationActivity"
             android:exported="false" />

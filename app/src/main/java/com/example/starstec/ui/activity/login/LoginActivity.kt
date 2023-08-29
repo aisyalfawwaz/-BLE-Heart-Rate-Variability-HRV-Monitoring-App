@@ -9,7 +9,7 @@ import android.widget.ProgressBar
 import androidx.appcompat.app.AppCompatActivity
 import com.example.starstec.R
 import com.example.starstec.databinding.ActivityLoginBinding
-import com.example.starstec.ui.activity.MainActivity
+import com.example.starstec.ui.activity.ble.ScanActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -117,7 +117,9 @@ class LoginActivity : AppCompatActivity() {
 
 
     private fun startMainActivity() {
-        val intent = Intent(this, MainActivity::class.java)
+
+
+        val intent = Intent(this, ScanActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
         startActivity(intent)
         finish()

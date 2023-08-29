@@ -221,7 +221,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/poppins"
-                        android:text="You're fairly relaxed and your system are running like a well-oiled machine, All in all, you're ready to get things done and minor bumps on your road to greatness won't throw you off track, Your thinking is crstal-clear, so take advantage of it. Hitting the gym will do you a lot of good if you/re up for a workout"
+                        android:text="You're fairly relaxed and your systemg are running like a well-oiled machine, All in all, you're ready to get things done and minor bumps on your road to greatness won't throw you off track, Your thinking is crstal-clear, so take advantage of it. Hitting the gym will do you a lot of good if you/re up for a workout"
                         android:textSize="12sp" />
 
                 </LinearLayout>

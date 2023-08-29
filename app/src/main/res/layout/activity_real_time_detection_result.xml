@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".ui.fragment.DashboardFragment">
+    tools:context=".ui.activity.realtimeresult.RealTimeDetectionResultActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -49,7 +49,7 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
                 android:fontFamily="@font/poppins"
-                android:text="Realtime Stress Detection"
+                android:text="Realtime Stress Detection Result"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -57,57 +57,175 @@
 
     </LinearLayout>
 
-
-    <com.google.android.material.card.MaterialCardView
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="16dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
         app:cardBackgroundColor="@color/white"
         app:cardElevation="10dp"
-        app:strokeColor="@color/white">
-
-        <LinearLayout
+        app:strokeColor="@color/white"
+        app:cardCornerRadius="8dp"
+        >
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="35dp"
-            android:layout_marginRight="20dp"
-            android:orientation="vertical">
+            android:scrollbars="none">
 
             <LinearLayout
+                android:layout_margin="16dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:gravity="center"
+                android:orientation="vertical"
                 >
 
                 <TextView
-                    android:id="@+id/realtime_result"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Your status will appeared here"
-                    android:textStyle="bold"
                     android:fontFamily="@font/poppins_semibold"
-                    android:gravity = "center"
+                    android:text="Here are your result in 5 minutes detection:"
+                    android:gravity="center"
                     />
 
-            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="2dp"
+                        >
+                        <TextView
+                            android:id="@+id/first_minute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="A"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1''"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="2dp"
+                        >
+                        <TextView
+                            android:id="@+id/second_minute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="B"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2''"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="2dp"
+                        >
+                        <TextView
+                            android:id="@+id/third_minute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="C"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3''"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="2dp"
+                        >
+                        <TextView
+                            android:id="@+id/fourth_minute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="D"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4''"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_margin="2dp"
+                        >
+                        <TextView
+                            android:id="@+id/fifth_minute"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="E"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5''"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
 
                 <TextView
-
-                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins"
-                    android:text="HR Score"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:text="Here's some details! "
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="20sp"
+                    />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Heart Rate (HR)"
+                    android:textSize="16sp"
+                    />
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="wrap_content"
@@ -129,12 +247,12 @@
                             android:layout_gravity="center|left"
                             android:layout_marginStart="16dp"
                             android:fontFamily="@font/poppins"
-                            android:text="HR"
+                            android:text="HR Rate"
                             android:textSize="18sp" />
 
 
                         <TextView
-                            android:id="@+id/hr"
+                            android:id="@+id/hr_rate"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -160,24 +278,21 @@
 
                 </com.google.android.material.card.MaterialCardView>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Heart Rate (HR) is a number of beats per minute(bpm). The normal range of HR is around 45-100 bpm. High stress levels can cause a fast heartbeat or heart rate."
+                    android:fontFamily="@font/poppins"
+                    />
 
                 <TextView
-
-                    android:layout_width="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/poppins"
-                    android:text="HRV Score"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="HRV Rate"
                     android:textSize="16sp"
-                    android:textStyle="bold" />
-
-
+                    />
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
@@ -198,11 +313,12 @@
                             android:layout_gravity="center|left"
                             android:layout_marginStart="16dp"
                             android:fontFamily="@font/poppins"
-                            android:text="HRV"
+                            android:text="HRV Rate"
                             android:textSize="18sp" />
 
+
                         <TextView
-                            android:id="@+id/hrv"
+                            android:id="@+id/hrv_rate"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -228,23 +344,22 @@
 
                 </com.google.android.material.card.MaterialCardView>
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
 
                 <TextView
-
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppins"
-                    android:text="SCR Score"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
+                    android:text="Heart Rate Variability (HRV) plays a crucial role in detecting stress levels in esports, as it measures the subtle variations in the intervals between heartbeats, providing insights into an individual's autonomic nervous system activity and overall physiological response to stress during gaming sessions."
+                    />
 
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="SCR"
+                    android:textSize="16sp"
+                    android:layout_marginTop="8dp"
+                    />
 
                 <com.google.android.material.card.MaterialCardView
                     android:layout_width="wrap_content"
@@ -266,19 +381,19 @@
                             android:layout_gravity="center|left"
                             android:layout_marginStart="16dp"
                             android:fontFamily="@font/poppins"
-                            android:text="SCR"
+                            android:text="SCR Rate"
                             android:textSize="18sp" />
 
 
                         <TextView
-                            android:id="@+id/scr"
+                            android:id="@+id/scr_rate"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginStart="100dp"
                             android:fontFamily="@font/poppins"
                             android:text="0"
-                            android:textColor="#0754B0"
+                            android:textColor="#FD2F6B"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -296,43 +411,14 @@
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
-            </LinearLayout>
-
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btndetectstress"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="38dp"
-                android:text="Detect Now"
-                />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="end"
-                >
 
                 <TextView
-                    android:id="@+id/see_result"
-                    android:visibility="gone"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="See your result here!"
-                    android:layout_marginTop="25dp"
-                    android:textStyle="bold"
-                    android:textColor="#FF00F000"
-                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Skin Conductance Response (SCR) plays a crucial role in detecting stress levels during esports competitions, as it provides valuable insights into the physiological changes and arousal levels experienced by players, helping researchers and coaches better understand and manage stress in competitive gaming."
+                    android:fontFamily="@font/poppins"
                     />
-
-
             </LinearLayout>
-
-
-        </LinearLayout>
-
-    </com.google.android.material.card.MaterialCardView>
-
-
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
 </LinearLayout>
